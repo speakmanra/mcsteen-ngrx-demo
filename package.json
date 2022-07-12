@@ -28,11 +28,6 @@
       "<rootDir>/dist/"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn build && yarn prettier && yarn prettier:scss && yarn lint && yarn stylelint && jest && git add ."
-    }
-  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.0",
