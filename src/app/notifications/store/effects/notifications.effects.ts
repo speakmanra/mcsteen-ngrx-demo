@@ -14,7 +14,7 @@ import * as authActions from '../../../store/actions/auth.actions';
 export class NotificationEffects {
   constructor(private actions$: Actions, private snackBar: MatSnackBar) {}
 
-  signupSuccess$: Observable<any> = createEffect(() =>
+  loginSuccess$: Observable<any> = createEffect(() =>
     this.actions$.pipe(ofType(authActions.LoginSuccess)).pipe(
       map(() => {
         const message = {
@@ -29,7 +29,23 @@ export class NotificationEffects {
     )
   );
 
-  open(message: Message, duration: number = 5000): void {
+
+  logoutSuccess$: Observable<any> = createEffect(() =>
+    this.actions$.pipe(ofType(authActions.Logout)).pipe(
+      map(() => {
+        const message = {
+          text: 'Logout Successful.',
+          type: 'failure'
+        };
+
+        this.open(message);
+
+        return new notificationsActions.NotifySuccess();
+      })
+    )
+  );
+
+  open(message: Message, duration: number = 1000): void {
     this.snackBar.open(message.text, 'Dismiss', {
       duration,
       panelClass: message.type

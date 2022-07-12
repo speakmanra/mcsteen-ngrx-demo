@@ -1,24 +1,31 @@
 // General Colors
 $black: #000000;
 $white: #ffffff;
+$grey: #979797;
+$light-silver: #d8d8d8;
 $transparent: transparent;
 
 // Main Colors
-$dark-blue: #021a3b;
-$dark-blue-faded: rgba(2, 26, 59, 0.4);
-$midnight: #04295c;
-$navy: #173c80;
-$medium-blue: #223a66;
-$light-blue: #20aeff;
-$neon-green: #2bf986;
-$lime-green: #77bf53;
-$forrest: #178048;
-$peach: #f86144;
-$rust: #802817;
-$red: #ff3030;
-$orange: #fb7f00;
-$neon-yellow: #fafe00;
-$gold: #ffd430;
+$sunshine: #ffd530;
+$early-sunshine: #ffc330;
+$light-banana: #ffcb4d;
+$banana: #ffdb4d;
+$charcoal: #313036;
+$slate: #7e7d82;
+$concrete: #a5a4a8;
+$dark-charcoal: #1f1e22;
+$header-charcoal: #18181b;
+$darkest-charcoal: #121215;
+$placeholder-charcoal: #232126;
+$elephant: #39373e;
+$pewter: #252429;
+$candy: #dc4f4f;
+$sidewalk: #979797;
+$rust: #925002;
+$bigbird: #fed32d;
+$citrus: #e88806;
+$tangerine: #e77e03;
+$valid: #588e50;
 
 // Tints
 $blk-25: rgba($black, 0.25);
@@ -30,3 +37,34 @@ $white-38: rgba($white, 0.38);
 $white-50: rgba($white, 0.5);
 $white-60: rgba($white, 0.6);
 $white-87: rgba($white, 0.87);
+$silver-15: rgba($light-silver, 0.15);
+$sunshine-25: rgba($sunshine, 0.25);
+$tangerine-0: rgba($tangerine, 0);
+
+// Gradients
+$sunshine-gradient: linear-gradient(
+  315.32deg,
+  $early-sunshine 0%,
+  $sunshine 100%
+);
+$banana-gradient: linear-gradient(315.32deg, $light-banana 0%, $banana 100%);
+$charcoal-gradient: linear-gradient(180deg, $charcoal 0%, $dark-charcoal 100%);
+$wht-blk-charcoal-slate-gradient: linear-gradient(
+    180deg,
+    $white-50 0%,
+    $blk-50 100%
+  ),
+  linear-gradient(134.72deg, $charcoal 0%, $slate 100%),
+  linear-gradient(180deg, $charcoal 0%, $dark-charcoal 100%);
+$charcoal-slate-gradient: linear-gradient(134.72deg, $charcoal 0%, $slate 100%);
+$citrus-gradient: radial-gradient(
+    circle at left center,
+    $rust 0%,
+    $tangerine-0 100%
+  ),
+  radial-gradient(circle at top right, $bigbird 0%, $citrus 100%);
+$vip-gradient: linear-gradient(134.72deg, $charcoal 0%, $slate 100%),
+  linear-gradient(180deg, $charcoal 0%, $dark-charcoal 100%);
+
+// Wireframe Colors - delete later
+$light-gray: #e1e1e1;

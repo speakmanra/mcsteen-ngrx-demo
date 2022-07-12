@@ -10,6 +10,9 @@ $font-path: "/assets/fonts";
 // Material Icons
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+// Angular Material Theme
+@import "~styles/material/mat-theme";
+
 // Normalize
 @import "~normalize-scss/sass/normalize/import-now";
 

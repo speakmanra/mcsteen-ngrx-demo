@@ -1,0 +1,23 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+
+// Common styles for Angular Material.
+@include mat-core();
+
+// Custom Colors
+@import "./mat-colors";
+
+// Primary theme colors
+$vip-primary: mat-palette($mat-sunshine);
+$vip-accent: mat-palette($mat-charcoal);
+$vip-warn: mat-palette($mat-candy);
+
+// Set Primary Theme
+$vip-light-theme: mat-light-theme($vip-primary, $vip-accent, $vip-warn);
+
+// Set Dark Theme
+$vip-dark-theme: mat-dark-theme($vip-primary, $vip-accent, $vip-warn);
+
+// Set Default Theme
+@include angular-material-theme($vip-light-theme);

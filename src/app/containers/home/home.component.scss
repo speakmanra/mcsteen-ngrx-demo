@@ -1,6 +1,9 @@
-.buttons {
+@import "src/styles/config";
+
+:host {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: rem-calc(40);
+  flex-direction: column;
+  height: 90vh;
 }

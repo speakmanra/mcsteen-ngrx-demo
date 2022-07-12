@@ -1,0 +1,12 @@
+@import "src/styles/config";
+
+// Snackbar styles
+.mat-snack-bar-container {
+  &.failure {
+    color: $candy;
+  }
+
+  button {
+    color: $sunshine;
+  }
+}

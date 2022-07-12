@@ -3,3 +3,4 @@
   <button *ngIf="isLoggedIn$ | async" (click)="logout()">Logout</button>
 </div>
 <app-text-box [userInfo]="userInfo" [isLoggedIn]="isLoggedIn$ | async"></app-text-box>
+
