@@ -1,0 +1,16 @@
+
+{
+  "/api": {
+    "target": "<add-dev-env-here>",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "secure": true,
+    "headers": {
+      "Accept": "application/json",
+      "Cache-Control": "no-cache"
+    }
+  }
+}
+  

@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+// Setup Custom Fonts
+$font-path: "/assets/fonts";
+
+// @font-face Setup
+@import "./assets/fonts/usarmy/index";
+
+// Get the config. This is needed in every component scss file.
+@import "./styles/config";
+
+// Material Icons
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// Normalize
+@import "~normalize-scss/sass/normalize/import-now";
+
+// Get partials
+@import "./styles/partials/all";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
